@@ -13,6 +13,8 @@ import java.util.LinkedHashMap;
 @RegisterRestClient
 public interface CurrencyPriceClient {
 
+
+
     @GET
     @Path("/{pair}")
     CurrencyPriceDTO getPriceByPair(@PathParam("pair") String pair);
